@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite'); /*Heading*/
+@import url('https://fonts.googleapis.com/css?family=Mitr'); /*Subheading*/
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab'); /*body*/
+
+h1{
+    font-family: "Special Elite", sans-serif;
+}
+
+p{
+    font-family: "Antic Slab", sans-serif;
+}
+
+h2{
+    font-family: "Mitr", sans-serif;
+    font-size: large;
+}
+
+button.btn.btn-link{
+    font-family: "Antic Slab", sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    color: black;
+
+}
+
