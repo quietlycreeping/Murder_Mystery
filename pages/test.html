@@ -13,10 +13,11 @@
 <!--------------------------------Body------------------------------------->
     <body>
 
-
+      <!--Countdown Timer-->
+      <p id="countdown"></p>
+      <script src="../assests/scripts/countdown.js"></script>
 
       <!--Checkbox-->
-
       <script> // Function to save checkbox states to Local Storage
         function saveCheckboxStates() {
           const checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -46,13 +47,13 @@
         document.addEventListener('DOMContentLoaded', loadCheckboxStates); </script>
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
+  <label class="form-check-label" >
     Default checkbox
   </label>
 </div>
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-  <label class="form-check-label" for="flexCheckChecked">
+  <label class="form-check-label" >
     Checked checkbox
   </label>
 </div>
