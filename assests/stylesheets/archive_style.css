@@ -1,25 +1,113 @@
-@import url('https://fonts.googleapis.com/css?family=Special+Elite'); /*Heading*/
-@import url('https://fonts.googleapis.com/css?family=Mitr'); /*Subheading*/
-@import url('https://fonts.googleapis.com/css?family=Antic+Slab'); /*body*/
+@import url('https://fonts.googleapis.com/css?family=Bangers'); /*Heading*/
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed'); /*Subheading*/
+@import url('https://fonts.googleapis.com/css?family=Prompt'); /*body*/
 
-h1{
-    font-family: "Special Elite", sans-serif;
+nav
+{
+  background-color: #1B4079;
 }
 
-p{
-    font-family: "Antic Slab", sans-serif;
+/* MOPP */
+.navbar-brand 
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size:x-large;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.navbar-brand:hover
+{
+  color: grey;
+}
+
+/* Archive and Admistrative Dropdown*/
+a.nav-link.dropdown-toggle 
+{
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  color: white;
+}
+
+/* Dropdown Text*/
+a.dropdown-item
+{
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+  font-size: 14px;
+  background-color: #1B4079;
+}
+
+a.nav-link.disabled
+{
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+  font-size: 14px;
+  background-color: #1B4079;
+}
+
+ul.dropdown-menu.show
+{
+  background-color: #1B4079;
+}
+
+h1{
+    font-family: "Bangers", sans-serif;
+    font-size: 45px;
 }
 
 h2{
-    font-family: "Mitr", sans-serif;
-    font-size: large;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 300; 
+    font-size: 18px; 
 }
 
+
+h3{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: #EE2E31;
+    font-weight: 500; 
+    font-size: 22px; 
+}
+
+p{
+    font-family: "Prompt", sans-serif;
+    font-size: small;
+}
+
+/*Header Buttons (___ moves)*/
+button.btn
+{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 300; 
+    font-size: 20px; 
+}
+
+/*Subheader Buttons (directly engage...)*/
 button.btn.btn-link{
-    font-family: "Antic Slab", sans-serif;
+    font-family: "Prompt", sans-serif;
     font-weight: 300;
     font-size: medium;
     color: black;
 
 }
+
+/*Buttons body*/
+div.card-body{
+    font-family: "Prompt", sans-serif;
+    font-size: small;
+    padding: 10px;
+
+}
+
+ul{
+    list-style-type: square;
+}
+
+hr{
+    border: 1px solid lightgray; 
+}
+
 
