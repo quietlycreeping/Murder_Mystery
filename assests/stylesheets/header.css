@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unkempt:wght@400;700&display=swap');
+
 nav
 {
   background-color: #74d472;
@@ -5,6 +8,8 @@ nav
 
 span.navbar-text
 {
-    font-size: x-large;
-    color: rgb(255, 0, 0);
+  font-family: "Unkempt";
+  font-size: 175%;
+  font-weight: 700;
+  color: rgb(255, 0, 0);
 }
