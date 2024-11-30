@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unkempt:wght@400;700&display=swap');
+
+hr.dashed {
+    border-top: 3px dashed #bbb;
+  }
+
+  #profile_con1
+{
+  background-color: #74d472;
+  font-family: "Raleway";
+}
+
+#profile_con2
+{
+  background-color: #9c72d4;
+  font-family: "Raleway";
+}
+
+#profile_con3
+{
+  background-color: #74d472;
+  font-family: "Raleway";
+}
