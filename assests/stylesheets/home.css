@@ -1,20 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unkempt:wght@400;700&display=swap');
+
 #home_con1
 {
   background-color: #c93535;
-  text-align: center;
+  font-family: "Raleway";
 }
 
 #home_con2
 {
   background-color: #74d472;
+  font-family: "Raleway";
 }
 
 #home_con3
 {
   background-color: #c93535;
+  font-family: "Raleway";
 }
 
 #home_con4
 {
   background-color: #74d472;
+  font-family: "Raleway";
 }
