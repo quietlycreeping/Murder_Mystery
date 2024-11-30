@@ -5,6 +5,10 @@
 {
   background-color: #c93535;
   font-family: "Raleway";
+  text-align: center;
+  h1{
+    font-size: 150%;
+  }
 }
 
 #home_con2
@@ -15,12 +19,20 @@
 
 #home_con3
 {
-  background-color: #c93535;
+  background-color: #410004;
   font-family: "Raleway";
+  h2{
+    color: wheat;
+  }
 }
 
 #home_con4
 {
   background-color: #74d472;
   font-family: "Raleway";
+}
+
+a
+{
+  color:black
 }

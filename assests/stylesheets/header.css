@@ -6,10 +6,11 @@ nav
   background-color: #74d472;
 }
 
-span.navbar-text
+div.navbar-text
 {
   font-family: "Unkempt";
-  font-size: 175%;
+  font-size: 120%;
   font-weight: 700;
   color: rgb(255, 0, 0);
+  text-align: center;
 }
