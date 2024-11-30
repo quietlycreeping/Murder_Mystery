@@ -1,16 +1,12 @@
-#Characters
-
-###Claus Family
-
+# Characters
+### Claus Family
 * [Santa Claus](https://quietlycreeping.github.io/Murder_Mystery/pages/characters/Santa/home)
 * Mr. Claus
 * Connie Claus
-
-###Workers
-
+### Workers
 * Holiday Wishes
 * Kristy Krangle
-###Elves
+### Elves
 * Blinky
 * Bouncy
 * Jangle
@@ -18,7 +14,7 @@
 * Spanky
 * Sparky
 * Ivy
-###Reindeer
+### Reindeer
 * Blitzen
 * Comet
 * Dusty
