@@ -19,25 +19,24 @@
     <!-----------------Header---------------------->               
       <nav class="navbar">
         <div class="container-fluid">
-          <a class="navbar brand" href="home.html">
-              <img src="../../../assests/images/icons/home.png" width="50">
-          </a>
-        <div class="navbar-text">
-            Santa's <br>Workshop
-        </div>
-        <div class="nav navbar-right">
-            <a href="profile.html"><img src="../../../assests/images/icons/profile.png" width="50"></a>
+          <img src="../../../assests/images/header.jpg" class="img-fluid">
         </div>
       </nav>
+      <nav class="navbar">
+        <div class="container d-flex justify-content-center">
+            <a href="home.html"><img src="../../../assests/images/icons/home.png" width="60" ></a>
+            <a href="profile.html"><img src="../../../assests/images/icons/profile.png" width="60"></a>
+        </div>
+      </nav>   
 
     <!--Welcome-->      
-      <div class="container" style="margin-top:2% ; margin-bottom:2%" id="profile_con1">
+      <div class="container" style="margin:2% ; padding:1%" id="profile_con1">
         <h2>Welcome, Santa Claus</h2>
         <hr class="dashed">
       </div>
 
     <!--Personality/Relationships-->      
-    <div class="container" style="margin-top:2% ; margin-bottom:2%" id="profile_con2">
+    <div class="container" style="margin:2% ; padding:1%" id="profile_con2">
         <div class="row">
           <div class="col">
             <h3>Personality</h3>
@@ -59,12 +58,27 @@
     </div>  
 
     <!--Backstory/Acting/Dress-->      
-    <div class="container" style="margin-top:2% ; margin-bottom:2%" id="profile_con3">
+    <div class="container" style="margin:2% ; padding:1%" id="profile_con3">
       <!--buttons-->   
-      <div class="d-flex justify-content-center" style="margin-top:2% ; margin-bottom:2%" >
-        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#backstory">Backstory</button>
-        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#acting">Playing Your Part</button>
-        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#dress">Dressing Your Part</button>        
+      <div class="container d-flex" style="margin-top:2% ; margin-bottom:2%" >
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#backstory">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+          Backstory
+        </button>
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#acting">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+          Playing Your Part
+        </button>
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#dress">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+          Dressing Your Part
+        </button>        
       </div>
       <!--Cards-->   
       <div class="collapse" id="backstory">

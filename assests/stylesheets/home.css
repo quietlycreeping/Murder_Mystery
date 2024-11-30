@@ -5,7 +5,7 @@ body
   background-color: #1A1A1A;
 }
 
-#home_con1
+#home_con1 /* countdown */
 {
   background-color: #440303;
   font-family: "Poppins", sans-serif;
@@ -19,7 +19,7 @@ body
   }
 }
 
-#home_con2
+#home_con2 /* news */
 {
   background-color: #034208;
   font-family: "Poppins", sans-serif;
