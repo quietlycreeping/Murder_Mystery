@@ -1,9 +1,13 @@
 #Characters
+
 ###Claus Family
+
 * [Santa Claus](https://quietlycreeping.github.io/Murder_Mystery/pages/characters/Santa/home)
 * Mr. Claus
 * Connie Claus
+
 ###Workers
+
 * Holiday Wishes
 * Kristy Krangle
 ###Elves
