@@ -21,6 +21,9 @@ body
 
 #home_con2 /* news */
 {
+  h2{
+    text-shadow:none
+  }
   background-color: #034208;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
