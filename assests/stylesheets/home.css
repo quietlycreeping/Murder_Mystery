@@ -14,7 +14,7 @@ body
   color: white;
   text-align: center;
   h2{
-    font-size: 150%;
+    font-size: 250%;
     font-family: "Caveat", serif;
   }
 }
@@ -26,7 +26,9 @@ body
   font-weight: 400;
   font-style: normal;
   color: white;
+  text-shadow: 2px 2px black;
 }
+
 
 #home_con3 /* Profiles */
 {
@@ -44,6 +46,12 @@ button
   margin-top: 4%;
 }
 
+div.card.card-body
+{
+  background-color: #1A1A1A;
+}
+
+
 #home_con4
 {
   background-color: #034208;
@@ -51,9 +59,4 @@ button
   font-weight: 400;
   font-style: normal;
   color: white;
-}
-
-a
-{
-  color:black
 }
