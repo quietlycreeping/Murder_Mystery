@@ -5,12 +5,3 @@ nav
 {
   background-color: #034208;
 }
-
-div.navbar-text
-{
-  font-family: "Caveat", serif;
-  font-size: 120%;
-  font-weight: 700;
-  color: rgb(255, 0, 0);
-  text-align: center;
-}
