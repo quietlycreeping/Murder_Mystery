@@ -45,9 +45,9 @@ button.btn
   border: 2px solid #1A1A1A;
 }
 
-button:active
+button:hover
 {
-  color: white;
+  color: #E1331D;
 }
 
 div.card.card-body
