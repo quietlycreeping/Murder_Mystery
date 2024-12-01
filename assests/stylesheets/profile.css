@@ -45,7 +45,12 @@ button.btn
   border: 2px solid #1A1A1A;
 }
 
-button:hover
+button.btn:hover
+{
+  color: #E1331D;
+}
+
+button.btn:active
 {
   color: #E1331D;
 }
