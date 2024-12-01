@@ -45,6 +45,11 @@ button.btn
   border: 2px solid #1A1A1A;
 }
 
+button:active
+{
+  color: white;
+}
+
 div.card.card-body
 {
   background-color: #1A1A1A;
