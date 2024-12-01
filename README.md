@@ -1,7 +1,7 @@
 # Characters
 ### Claus Family
 * [Santa Claus](https://quietlycreeping.github.io/Murder_Mystery/pages/characters/Santa/home)
-* Mr. Claus
+* [Mr. Claus](https://quietlycreeping.github.io/Murder_Mystery/pages/characters/Mrs.Claus/home.html)
 * Connie Claus
 ### Workers
 * Holiday Wishes
