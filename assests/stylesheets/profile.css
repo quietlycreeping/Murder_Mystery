@@ -39,21 +39,25 @@ hr.dashed {
 
 button.btn
 {
-  background-color: #440303;
+  background-color: #750710;
   color: white;
   margin: .5%;
-  border: 2px solid #1A1A1A;
+  border: 2px solid #750710;
 }
 
 button.btn:hover
 {
-  background-color: #E1331D;
+  background-color: #FFB426;
+  border: 2px solid #945D2D;
+  color: white;
 
 }
 
 button.btn:focus
 {
-  background-color: #E1331D;
+  background-color: #FFB426;
+  border: 2px solid #945D2D;
+  color: white;
 }
 
 div.card.card-body
