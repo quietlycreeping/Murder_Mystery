@@ -2,67 +2,106 @@
 <html lang="en">
   <head>
     <title>Home</title>
-    <link rel="icon" type="image/png" href="../Murder_Mystery/assests/images/favicon/question.png">
+    <link rel="icon" type="image/png" href="../assests/images/icons/MainFlavicon.png">
+    <link rel="apple-touch-icon" href="../assests/images/icons/MainFlavicon.png">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!--Styling-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <link rel="stylesheet" href="../assests/stylesheets/header.css">
     <link rel="stylesheet" href="../assests/stylesheets/header.css">
     <link rel="stylesheet" href="../assests/stylesheets/footer.css">
     <link rel="stylesheet" href="../assests/stylesheets/home.css">   
   </head>
 <!--------------------------------Body------------------------------------->
-    <body>
+  <body>
     <!-----------------Header---------------------->               
-      <nav class="navbar"><div class="container">
-              <a class="navbar brand" src="home.html">
-                  <img src="../assests/images/question.png" width="50">
-              </a>
-              <span class="navbar-text">
-                  Santa's Workshop
-              </span>
-              <a class="navbar brand" src="home.html" id="login">
-                  <img src="../assests/images/question.png" width="50">
-              </a>
-      </div></nav>
+    <nav class="navbar" style="padding: 0 0 1% 0; margin:0 0 2% 0">
+        <img src="../assests/images/header.jpg" class="object-fit-none" style="overflow: hidden; padding: 0; margin:0">
+      <div class="container d-flex justify-content-center">
+          <a href="home.html"><img src="../assests/images/icons/home.png" width="60" ></a>
+          <p></p><p></p>
+          <a href="tasks.html"><img src="../assests/images/icons/list.png" width="60"></a>
+          <p></p><p></p>
+          <a href="profile.html"><img src="../assests/images/icons/profile.png" width="60"></a>
+      </div>
+    </nav>   
 
     <!--Countdown Timer-->
-    <div class="container" style="margin-top:2% ; margin-bottom:2%" id="home_con1">
+    <div class="container-fluid" style="margin:2% 0 2% 0 ; padding: 1% 0 1% 0" id="home_con1">
       <div class="d-flex justify-content-center">
         <h1 id="countdown" style="margin:2px;"></h1>
-      </div>
+      </div> 
       <div class="d-flex justify-content-center">
-        <h1>Till Christmas Eve</h1>
+        <h2>Till the Holly Jolly<br>Christmas Party</h2>
       </div>
     </div>
 
     <!--News-->
-    <div class="container" style="margin-top:2% ; margin-bottom:2%" id="home_con2">
-      <h2>News coming soon</h2>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="container mx-auto" style="margin:2% ; padding:1%" id="home_con2">
+      <img src="../assests/images/newsletter.jpg" class="img-fluid">
+      <div id="newsCarousel" class="carousel slide justify-content-center">
         <ol class="carousel-indicators">
-          <li data-slide-to="0" class="active"></li>
-          <li data-slide-to="1"></li>
-          <li data-slide-to="2"></li>
+          <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#newsCarousel" data-slide-to="1"></li>
+          <li data-target="#newsCarousel" data-slide-to="2"></li>
+          <li data-target="#newsCarousel" data-slide-to="3"></li>
+          <li data-target="#newsCarousel" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" img src="../assests/images/question.png" width="50" alt="First slide">
+            <img class="d-block w-100" src="../assests/images/News1.jpg" alt=" 1 slide">
+              <div class="carousel-caption">
+                <h5><b>New Face at North Pole</b></h5>
+                <p>Straight from the mainland, Santa has recruited Kristy Krangle, a young businesswoman, to work as an intern at the North Pole.<br><br> 
+                  While some speculate that Kristy may one day take over as Santa, others feel she is simply here to give business advice.</p>
+              </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" img src="../assests/images/question1.png" width="50" alt="Second slide">
+            <img class="d-block w-100" src="../assests/images/News2.jpg" alt="2 slide">
+              <div class="carousel-caption">
+                <h5><b>Accident Suspect Still on the Loose</b></h5>
+                <p style="font-size: 90%;">Following a tragic accident last week, Hermey remains in a coma in the infirmary. Hermey was on his way home when he was run over by a reindeer.
+                   Jingle Elf is doing her best to investigate the situation and find the guilty party. On Santa's command, the culprit responsible will have their flying privileges 
+                   revoked, thus ending any chance of making or participating as a member of Santa's sleigh team. <br> While it is a heavy price to pay, some feel that it is not nearly enough!</p>
+              </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" img src="../assests/images/question.png" width="50" alt="Third slide">
+            <img class="d-block w-100" src="../assests/images/News3.jpg" alt="3 slide">
+              <div class="carousel-caption">
+                <h5><b>Nutrition Warning!</b></h5>
+                <p>Eggnog has been found to cause disorientation in reindeer when consumed in large quantities.<br><br> 
+                  For this reason, reindeer are prohibited from drinking eggnog other than at special, supervised occasions.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../assests/images/News4.jpg" alt="4 slide">
+              <div class="carousel-caption">
+                <h5><b>Reindeer Speeds</b></h5>
+                <p>
+                  Rudolph: 72 mph<br>
+                  Blitzen: 82 mph<br>
+                  Comet: 85 mph<br>
+                  Cupid: 77 mph<br>
+                  Dusty: 85 mph<br>             
+                </p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../assests/images/News5.jpg" alt="5 slide">
+              <div class="carousel-caption">
+                <h5><b>Memo from Santa</b></h5>
+                <p>"I think you are all aware of the growing population and need for continued growth in the workshop.<br><br> 
+                  I will be reviewing our processes to make sure we are running as efficiently as possible. Expect some changes this season!"</p>
+              </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -70,17 +109,278 @@
     </div>
 
     <!--Staff-->
-    <div class="container" style="margin-top:2% ; margin-bottom:2%" id="home_con3">
-      <h2>Staff coming soon</h2>
+    <div class="container mx-auto" style="margin:2% ; padding:1%" id="home_con3">
+      <h2>North Pole Staff</h2>
+  <!--Row 1-->
+      <div class="row">
+  <!--Col 1.1, Santa--> 
+          <div class="col">
+            <img src="../assests/images/profile/Santa.jpg" class="img-fluid">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1_1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+               View Bio
+            </button>
+            <div class="collapse" id="collapse1_1">
+              <div class="card card-body">
+                With the changing times, Santa has a lot to do to keep up with the current state of the world AND 
+                make sure her “Santa” legacy lives on untainted.
+              </div></div><p></p>
+        </div>
+  <!--Col 1.2, Mr. Claus--> 
+        <div class="col">
+          <img src="../assests/images/profile/MrClaus.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1_2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio
+          </button>
+          <div class="collapse" id="collapse1_2">
+            <div class="card card-body">
+              As the patriarch of the North Pole, Mr. Claus is worried about some of Santa's decisions and 
+              may have to exert his power to get his way!            
+            </div></div><p></p>
+        </div>
+      </div>    
+  <!--Row 2-->
+      <div class="row">
+    <!--Col 2.1, Connie--> 
+        <div class="col">
+          <img src="../assests/images/profile/Connie.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2_1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse2_1">
+            <div class="card card-body">
+              Connie is the heir apparent but is someone without a lot of Christmas spirit in her heart. 
+              Will Connie's spoiled attitude ruin her chances to inherit the kingdom and legacy her mother has built?            
+            </div></div><p></p>
+        </div>
+    <!--Col 2.2, Kristy--> 
+        <div class="col">
+          <img src="../assests/images/profile/Kristy.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2_2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse2_2">
+            <div class="card card-body">
+              Hand-picked to marry Santa's daughter and take over North Pole operations, Kristy is filled with kindness, generosity, and 
+              a business sense worthy of running the North Pole. The only thing Kristy is missing is the affection of Connie.            
+            </div></div><p></p>
+        </div>
+      </div>
+  <!--Row 3-->
+      <div class="row">
+    <!--Col 3.1, Jingle--> 
+        <div class="col">
+          <img src="../assests/images/profile/Jingle.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3_1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse3_1">
+            <div class="card card-body">
+              Trained from her adolescence to be Santa's right-hand elf, Jingle oversees every aspect of the North Pole operations and events. 
+              Jingle is the elf to whom others answer to.            
+            </div></div><p></p>
+        </div>
+    <!--Col 3.2, Jangle--> 
+        <div class="col">
+          <img src="../assests/images/profile/Jangle.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3_2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse3_2">
+            <div class="card card-body">
+              In charge of toy-designing, Jangle has a knack for making plans that some may see as outdated. 
+              Is Jangle's time in the workshop up or is there another reason for the lacking toy production?            
+            </div></div><p></p>
+        </div>
+      </div>  
+  <!--Row 4-->
+      <div class="row">
+        <!--Col 4.1,Ivy--> 
+        <div class="col">
+          <img src="../assests/images/profile/Ivy.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4_1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse4_1">
+            <div class="card card-body">
+              Filled with a vengeance, Ivy has vowed to find the reindeer who ran over her husband and make them pay for her pain.
+            </div></div><p></p>
+        </div>
+    <!--Col 4.2, Sparky--> 
+        <div class="col">
+          <img src="../assests/images/profile/Sparky.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4_2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse4_2">
+            <div class="card card-body">
+              Tired of always being a worker-elf, Sparky is ready to use their wits and resources to promote their position.            
+            </div></div><p></p>
+        </div>
+      </div>
+  <!--Row 5-->
+      <div class="row">
+    <!--Col 5.1, Spanky--> 
+        <div class="col">
+          <img src="../assests/images/profile/Spanky.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5_1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse5_1">
+            <div class="card card-body">
+              While children around the world are familiar with Santa's “naughty and nice” list, few realize that Spanky also 
+              makes an identical list for those working at the North Pole. Spanky will take charge if anyone steps out of line.            
+            </div></div><p></p>
+        </div>
+    <!--Col 5.2, Bouncy--> 
+        <div class="col">
+          <img src="../assests/images/profile/Bouncy.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5_2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse5_2">
+            <div class="card card-body">
+              In charge of the reindeer, Bouncy is allowed to care for the animals, but that is where their authority ends.            
+            </div></div><p></p>
+        </div>
+      </div>
+  <!--Row 6-->
+      <div class="row">
+    <!--Col 6.1, Blinky--> 
+        <div class="col">
+          <img src="../assests/images/profile/Blinky.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6_1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse6_1">
+            <div class="card card-body">
+              While Blinky considers himself the hardest working elf in the factory, there are others who would tell you differently. 
+              It is hard to tell if Blinky's diligent behavior is intended to boost toy production or aimed at his goal of becoming the 
+              next “head elf.”            
+            </div></div><p></p>
+        </div>
+    <!--Col 6.2, Blitzen--> 
+        <div class="col">
+          <img src="../assests/images/profile/Blitzen.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6_2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse6_2">
+            <div class="card card-body">
+              A committed team player, Blitzen simply wants to see the sleigh team get faster to ease Santa's worries.            
+            </div></div><p></p>
+        </div>
+      </div>
+  <!--Row 7-->
+      <div class="row">
+    <!--Col 7.1, Dusty--> 
+        <div class="col">
+          <img src="../assests/images/profile/Dusty.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7_1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio</button>
+          <div class="collapse" id="collapse7_1">
+            <div class="card card-body">
+              With her sights set on joining Santa's sleigh team, Dusty has worked hard and proven herself a worthy reindeer. 
+              However, it will just take an opening on the sleigh for Dusty to be in!            
+            </div></div><p></p>
+        </div>
+    <!--Col 7.2, Cupid--> 
+        <div class="col">
+          <img src="../assests/images/profile/Cupid.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7_2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio
+          </button>
+          <div class="collapse" id="collapse7_2">
+            <div class="card card-body">
+              The belle of the barn, Cupid is a sucker for true love. She appears to be more worried about her 
+              girlfriend Comet's position on the sleigh than her own.            
+            </div></div><p></p>
+        </div>
+      </div> 
+  <!--Row 8-->
+    <div class="row">
+      <!--Col 8.1, Comet--> 
+          <div class="col">
+            <img src="../assests/images/profile/Comet.jpg" class="img-fluid">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8_1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+                View Bio</button>
+            <div class="collapse" id="collapse8_1">
+              <div class="card card-body">
+                As the fastest reindeer, Comet's speed prevents her from being removed from the sleigh. 
+                Unless she is found guilty of something terrible!       
+              </div></div><p></p>
+          </div>
+      <!--Col 7.2, Rudolph--> 
+          <div class="col">
+            <img src="../assests/images/profile/Rudolph.jpg" class="img-fluid">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8_2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+                View Bio
+            </button>
+            <div class="collapse" id="collapse8_2">
+              <div class="card card-body">
+                With his position on the sleigh team guaranteed, Rudolph has not been living up to his potential and testing his boundaries.         
+              </div></div><p></p>
+          </div>
+        </div>   
+  <!--Row 9-->
+      <div class="row">
+        <!--Col 9.1--> 
+        <div class="col"></div>
+        <!--Col 9.2, Holiday Wishes--> 
+        <div class="col-6">
+          <img src="../assests/images/profile/HW.jpg" class="img-fluid">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9_m">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="2 -2 14 14">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+             View Bio
+            </button>
+          <div class="collapse" id="collapse9_m">
+            <div class="card card-body">
+              In charge of communications, Holiday often uses their position to collect information as well as deliver it.            
+            </div></div><p></p>
+        </div>
+    <!--Col 9.3--> 
+        <div class="col"></div>
+      </div>
     </div>
 
     <!--About-->
-    <div class="container" style="margin-top:2% ; margin-bottom:2%" id="home_con4">
-      <h2>About coming soon</h2>
+    <div class="container mx-auto" style="margin:2% ; padding:1%" id="home_con4">
+      <h2>About</h2>
+      <h3>A Night of North Pole Naughtiness!</h3>
+      <p>With the Christmas season well on its way, everyone at the <b>North Pole</b> is working hard to make this a holiday to remember.
+        <br><br>Despite the efforts of the arctic inhabitants, productivity is at an all-time low, upsetting many and putting <b>Santa's legacy at stake!</b>
+        <br><br>Desperate for a change, there are many who are willing to do almost anything to increase efficiency and restore peace at the North Pole. But only one will <b>go too far</b> and commit an act of <b>murder</b> in this mystical place.
+        <br><br>To ensure that the <b>Christmas legacy</b>  continues unchanged, you will be called upon to employ your <b>sleuthing skills</b> to make certain that the <b>criminal is caught!</b>
+      </p>
     </div>
 
     <!-----------------Footer---------------------->
-    <footer class="text-lg-start">
+    <footer>
       <div class="d-flex justify-start">
         <p>
           Designed by Emily Orlando<br>
@@ -92,6 +392,11 @@
 
       <!--Scripts-->    
       <script src="../assests/scripts/countdown.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+      <script src="../assests/scripts/countdown.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  </body>
 </html>
