@@ -11,13 +11,13 @@ body
   font-weight: 400;
   font-style: normal;
   color: white;
+  margin-bottom: 6%;
   .box 
   {
     background-image: repeating-linear-gradient(90deg, #ffb426, #ffb426 23px, transparent 23px, transparent 42px), repeating-linear-gradient(180deg, #ffb426, #ffb426 23px, transparent 23px, transparent 42px), repeating-linear-gradient(90deg, #ffb426, #ffb426 23px, transparent 23px, transparent 42px), repeating-linear-gradient(180deg, #ffb426, #ffb426 23px, transparent 23px, transparent 42px);
     background-position: left top, right top, left bottom, left top;
     background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
-    background-size: 100% 4px, 4px 100%, 100% 4px, 4px 100%;
-    margin: 2% 2% 2% 2%;
+    background-size: 100% 6px, 6px 100%, 100% 6px, 6px 100%;
   }
   h3
   {
