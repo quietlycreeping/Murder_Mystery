@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Tasks</title>
-    <link rel="icon" type="image/png" href="../assests/images/icons/MainFlavicon.png">
+    <link rel="icon" type="image/png" href="../assests/images/icons/HoHoHomicide_MainFlavicon.png">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,17 +26,49 @@
       </div>
     </nav>  
 
-    <!--Tasks-->      
+<!--------Tasks----->     
     <div class="container mx-auto" style="margin:2% ; padding:1% 1% 1% 2%" id="tasks_con1">
       <div class="row">
-          <div class="col">
-            <h3>Objectives</h3>
-            <ul>
-              <li>one</li>
-              <li>two</li>
-            </ul>
+        <h3>Tasks</h3>
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="objective_1" onclick="saveBoxes()"> 
+    <!--Task 1-->
+            <label class="form-check-label" for="flexCheckDefault">  
+              1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel. 
+            </label>
+            <input class="form-check-input" type="checkbox" id="objective_2" onclick="saveBoxes()">
+    <!--Task 2-->
+            <label class="form-check-label">
+              2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel. 
+            </label>
+            <input class="form-check-input" type="checkbox" id="objective_3" onclick="saveBoxes()">
+    <!--Task 3-->
+            <label class="form-check-label">
+              3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel. 
+            </label>
           </div>
         </div>
+        <div class="col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="objective_4" onclick="saveBoxes()">
+    <!--Task 4-->
+            <label class="form-check-label">  
+              4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel. 
+            </label>
+            <input class="form-check-input" type="checkbox" id="objective_5" onclick="saveBoxes()">
+    <!--Task 5-->
+            <label class="form-check-label">
+              5Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel. 
+            </label>
+            <input class="form-check-input" type="checkbox" id="objective_6" onclick="saveBoxes()">
+    <!--Task 6-->
+            <label class="form-check-label">
+              6Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel. 
+            </label>
+          </div>
+        </div>
+      </div>
     </div>  
 
     <!-----------------Footer---------------------->
@@ -50,11 +82,31 @@
       </div>
     </footer>
 
-      <!--Scripts-->    
+      <!--Scripts-->
+      <script src="../assests/scripts/checkboxLoad.js"></script>
+      <script>function saveBoxes(){
+      //array of all classes of checkboxes
+      var boxes = Array.from(document.querySelectorAll('[id^="objective"]'));
+      //array of all checkbox ids
+      var boxID = [];
+      //save all checkbox states  
+      for (let x=0; x < boxes.length; x++)
+        {
+            let id = boxes[x].id; 
+            boxID.push(id);
+        }
+      var isChecked = [];
+      for (let x=0; x < boxes.length; x++)
+      {
+          isChecked.push(boxes[x].checked);
+      }
+      let checkedString = JSON.stringify(isChecked);
+      localStorage.setItem("checkboxes", checkedString)
+      };</script>    
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     </body>
 </html>

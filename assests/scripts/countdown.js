@@ -21,9 +21,10 @@ var x = setInterval(function()
   document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
-  if (distance < 0) {
+  if (distance < 0) 
+  {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
+    document.getElementById("countdown").innerHTML = "It's Party Time!";
   }
 }, 1000);
 //1000 means it'll update every second
