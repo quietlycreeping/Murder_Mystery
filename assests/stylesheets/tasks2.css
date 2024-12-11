@@ -22,4 +22,14 @@ body
     font-style: normal;
     color: white;
 }
-  
+
+.form-check-input:checked 
+{
+  background-color: #FFB426;
+  border-color: #FFB426;
+}
+
+li
+{
+  padding-bottom: 2%;
+}
