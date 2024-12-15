@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tasks</title>
+    <link rel="icon" type="image/png" href="../assests/images/icons/HoHoHomicide_MainFlavicon.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../assests/stylesheets/header.css">
+    <link rel="stylesheet" href="../assests/stylesheets/footer.css">
+    <link rel="stylesheet" href="../assests/stylesheets/tasks2.css">  
+  </head>
+<!--------------------------------Body------------------------------------->
+  <body>
+    <!-----------------Header---------------------->               
+    <nav class="navbar" style="padding: 0 0 1% 0; margin:0 0 2% 0">
+      <img src="../assests/images/header.jpg" class="object-fit-none" style="overflow: hidden; padding: 0; margin:0">
+      <div class="container d-flex justify-content-center">
+          <a href="home.html"><img src="../../../assests/images/icons/home.png" width="60" ></a><p></p><p></p>
+          <a href="tasks2.html"><img src="../../../assests/images/icons/tasks.png" width="60"></a><p></p><p></p>
+          <a href="evidence.html"><img src="../../../assests/images/icons/evidence.png" width="60"></a><p></p><p></p>
+          <a href="profile.html"><img src="../../../assests/images/icons/profile_human.png" width="60"></a>
+      </div>
+    </nav>  
+
+    <!--Secrets-->      
+    <div class="container mx-auto" style="margin:0 1% 4% 1% ; padding:2% 2% 2% 2%" id="con1">
+      <h3>What You Know</h3>
+        <ul>
+          <li style="padding-bottom: 2%">You delivered correspondence from the Justice of the Peace and Matteo to the North Pole.</li>
+          <li style="padding-bottom: 2%">Blinky and Sparky both want to become head elf.</li>
+          <li style="padding-bottom: 2%">Blinky has been very attentive to Connie Claus lately.</li>
+          <li>Cupid is in love with Comet , but she will not commit to her until her name is cleared from any suspicion.</li>
+        </ul>
+    </div>
+
+<!------Tasks------->     
+    <div class="container mx-auto" style="margin:0 1% 4% 1%; padding:2% 2% 2% 2%"  id="con2">
+      <h3>Tasks</h3>
+      <div class="container">
+      <!--Task 1-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="objective_1" onclick="saveBoxes()"> 
+          <label class="form-check-label" for="flexCheckDefault">  
+            You will receive a piece of evidence from another guest. You may show it to anyone you like, but give it only to Spanky when asked.<p></p> 
+          </label></div>
+      <!--Task 2-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="objective_2" onclick="saveBoxes()">
+          <label class="form-check-label">
+            Accuse Sparky of murdering Jingle to gain power.<p></p> 
+          </label></div>
+      <!--Task 3-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="objective_3" onclick="saveBoxes()">
+          <label class="form-check-label">
+            Tell Connie Claus that Blinky may just be using her to get closer to obtaining the head elf position.<p></p>  
+          </label></div>
+      <!--Task 4-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="objective_4" onclick="saveBoxes()">
+          <label class="form-check-label">  
+            Find out from Santa Claus who she will pick to become the next “head elf.” Be very suspicious of that elf.
+<p></p>  
+          </label></div>
+
+      <!--Task 6-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="objective_6" onclick="saveBoxes()">
+          <label class="form-check-label">
+            Tell Cupid that murdering for her girlfriend is no way to gain her affection.
+          </label></div>
+      </div></div>
+
+
+    <!-----------------Footer---------------------->
+    <footer class="text-lg-start">
+      <div class="d-flex justify-start">
+        <p>
+          Designed by Emily Orlando<br>
+          Developed by <a href="https://github.com/quietlycreeping">Jennifer Orlando</a><br>
+          Story by <a href="https://www.nightofmystery.com/">Night of Mystery</a>
+        </p>
+      </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="../assests/scripts/checkbox2Load.js"></script>
+    <script>function saveBoxes(){
+    //array of all classes of checkboxes
+    var boxes = Array.from(document.querySelectorAll('[id^="objective"]'));
+    //array of all checkbox ids
+    var boxID = [];
+    //save all checkbox states  
+    for (let x=0; x < boxes.length; x++)
+      {
+          let id = boxes[x].id; 
+          boxID.push(id);
+      }
+    var isChecked = [];
+    for (let x=0; x < boxes.length; x++)
+    {
+        isChecked.push(boxes[x].checked);
+    }
+    let checkedString = JSON.stringify(isChecked);
+    localStorage.setItem("checkboxes2", checkedString)
+    };</script>      
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  </body>
+</html>

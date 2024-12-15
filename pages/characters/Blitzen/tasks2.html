@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tasks</title>
+    <link rel="icon" type="image/png" href="../assests/images/icons/HoHoHomicide_MainFlavicon.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../assests/stylesheets/header.css">
+    <link rel="stylesheet" href="../assests/stylesheets/footer.css">
+    <link rel="stylesheet" href="../assests/stylesheets/tasks2.css">  
+  </head>
+<!--------------------------------Body------------------------------------->
+  <body>
+    <!-----------------Header---------------------->               
+    <nav class="navbar" style="padding: 0 0 1% 0; margin:0 0 2% 0">
+      <img src="../assests/images/header.jpg" class="object-fit-none" style="overflow: hidden; padding: 0; margin:0">
+      <div class="container d-flex justify-content-center">
+          <a href="home.html"><img src="../../../assests/images/icons/home.png" width="60" ></a><p></p><p></p>
+          <a href="tasks2.html"><img src="../../../assests/images/icons/tasks.png" width="60"></a><p></p><p></p>
+          <a href="evidence.html"><img src="../../../assests/images/icons/evidence.png" width="60"></a><p></p><p></p>
+          <a href="profile.html"><img src="../../../assests/images/icons/profile_reindeer.png" width="60"></a>
+      </div>
+    </nav>  
+
+    <!--Secrets-->      
+    <div class="container mx-auto" style="margin:0 1% 4% 1% ; padding:2% 2% 2% 2%" id="con1">
+      <h3>What You Know</h3>
+        <ul>
+          <li style="padding-bottom: 2%">You accidentally ran over Hermey and you are trying to frame Rudolph for the accident.</li>
+          <li style="padding-bottom: 2%">Bouncy wanted to replace Rudolph on the sleigh team, but Jingle would not let them.</li>
+          <li style="padding-bottom: 2%">Connie Claus was jealous of Rudolph, Jingle and Kristy Krangle.</li>
+          <li style="padding-bottom: 2%">Ivy is unhappy with the slow progress of Hermey's accident investigation and thinks Jingle is to blame for stalling the inquiry.
+    </li>
+          <li>You witnessed Rudolph and Kristy Krangle making a pact.</li>
+        </ul>
+    </div>
+
+<!------Tasks------->     
+    <div class="container mx-auto" style="margin:0 1% 4% 1%; padding:2% 2% 2% 2%"  id="con2">
+      <h3>Tasks</h3>
+      <div class="container">
+      <!--Task 1-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="objective_1" onclick="saveBoxes()"> 
+          <label class="form-check-label" for="flexCheckDefault">  
+            Throw any suspicion off of yourself for the trampling of Hermey by accusing others of murdering Jingle.<p></p> 
+          </label></div>
+      <!--Task 2-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="objective_2" onclick="saveBoxes()">
+          <label class="form-check-label">
+            Tell Santa and Mr. Claus that you believe Connie may have murdered Jingle because she was jealous of Santa's tight relationship with her.<p></p> 
+          </label></div>
+      <!--Task 3-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="objective_3" onclick="saveBoxes()">
+          <label class="form-check-label">
+            Accuse Ivy of murdering Jingle because she was leading a corrupt investigation.<p></p>  
+          </label></div>
+      <!--Task 4-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="objective_4" onclick="saveBoxes()">
+          <label class="form-check-label">  
+            4Accuse Bouncy of murdering Jingle so that they could appoint whoever they wanted to the sleigh team.<p></p>  
+          </label></div>
+
+      <!--Task 6-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="objective_6" onclick="saveBoxes()">
+          <label class="form-check-label">
+            Ask Ivy to see any evidence she has. Point out the eggnog in the picture and insist that a young doe like Dusty would not have the tolerance to hold their eggnog and, therefore, must be the culprit.
+          </label></div>
+      </div></div>
+
+
+    <!-----------------Footer---------------------->
+    <footer class="text-lg-start">
+      <div class="d-flex justify-start">
+        <p>
+          Designed by Emily Orlando<br>
+          Developed by <a href="https://github.com/quietlycreeping">Jennifer Orlando</a><br>
+          Story by <a href="https://www.nightofmystery.com/">Night of Mystery</a>
+        </p>
+      </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="../assests/scripts/checkbox2Load.js"></script>
+    <script>function saveBoxes(){
+    //array of all classes of checkboxes
+    var boxes = Array.from(document.querySelectorAll('[id^="objective"]'));
+    //array of all checkbox ids
+    var boxID = [];
+    //save all checkbox states  
+    for (let x=0; x < boxes.length; x++)
+      {
+          let id = boxes[x].id; 
+          boxID.push(id);
+      }
+    var isChecked = [];
+    for (let x=0; x < boxes.length; x++)
+    {
+        isChecked.push(boxes[x].checked);
+    }
+    let checkedString = JSON.stringify(isChecked);
+    localStorage.setItem("checkboxes2", checkedString)
+    };</script>      
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  </body>
+</html>
