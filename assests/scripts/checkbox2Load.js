@@ -10,8 +10,9 @@ for (let x=0; x < boxes.length; x++)
     }
 
 //load checkbox state from Local Storage
-let checkedStringStorage = localStorage.getItem("checkboxes2")
-let isCheckedStorage = JSON.parse(checkedStringStorage)
+let checkedStringStorage = localStorage.getItem("checkboxes2");
+let isCheckedStorage = JSON.parse(checkedStringStorage);
+
 for (let x=0; x < isCheckedStorage.length; x++)
     {
         document.getElementById(boxID[x]).checked = isCheckedStorage[x];
